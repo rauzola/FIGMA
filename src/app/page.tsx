@@ -1,95 +1,116 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import React from "react";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
+    <>
+      <header>
+        <img src="/logo.svg" alt="logo" />
+        <nav className="mt-1 mx-auto">
+          <a href="#">Inicio</a>
+          <a href="#">Cursos</a>
+          <a href="#">Eventos</a>
+          <a href="#">Contato</a>
+        </nav>
+        <a href="#" className="button mt-1 mb-1 mx-auto">
+          Se inscreva
+        </a>
+      </header>
+      <main>
+        <section className="hero-section">
+          <img src="/hero-img.svg" alt="banda de jazz" />
+          <div>
+            <h1 className="mt-2">
+              Crie algo <span className="text-primary decoration">impactante</span> com
+              música
+            </h1>
+            <p className="mt-2 mb-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a href="#" className="button">
+              Comece agora
+            </a>
+          </div>
+          <section className="courses-section">
+            <div className="cards">
+              <article>
+                <img src="/piano.png" alt="piano" />
+                <strong>Piano popular</strong>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                  dolore magna aliqua.
+                </p>
+                <a href="#">
+                  <img src="/arrow-right.svg" alt="Ir para a pagina do curso" />
+                </a>
+              </article>
+              <article>
+                <img src="/clef.png" alt="clef" />
+                <strong>Teoria musical</strong>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                  dolore magna aliqua.
+                </p>
+                <a href="#">
+                  <img src="/arrow-right.svg" alt="Ir para a pagina do curso" />
+                </a>
+              </article>
+              <article>
+                <img src="/sax.png" alt="sax" />
+                <strong>Sax alto</strong>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                  dolore magna aliqua.
+                </p>
+                <a href="#">
+                  <img src="/arrow-right.svg" alt="Ir para a pagina do curso" />
+                </a>
+              </article>
+              <article>
+                <img src="/drums.png" alt="drums" />
+                <strong>Bateria</strong>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                  dolore magna aliqua.
+                </p>
+                <a href="#">
+                  <img src="/arrow-right.svg" alt="Ir para a pagina do curso" />
+                </a>
+              </article>
+            </div>
+
+            <h2>
+              E <span className="text-primary"> Varios</span> outros!
+            </h2>
+            <a href="#">Conhecer os cursos</a>
+          </section>
+        </section>
+      </main>
+
+      <footer>
         <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
+          <img src="/logo.svg" alt="logo" />
           <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
-        </a>
-      </div>
-    </main>
-  )
+        </div>
+        <nav>
+          <a href="#">Inicio</a>
+          <a href="#">Cursos</a>
+          <a href="#">Eventos</a>
+          <a href="#">Contato</a>
+        </nav>
+        <form>
+          <label htmlFor="email">Receba materiais gratuitos no seu email</label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Digite seu e-mail"
+          />
+        </form>
+      </footer>
+    </>
+  );
 }
